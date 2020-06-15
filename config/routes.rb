@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
  
   
+  resources :genres
   resources :favorites
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   root "movies#index"
