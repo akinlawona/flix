@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
  
   
+  resources :gensons
   resources :genres
   resources :favorites
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'

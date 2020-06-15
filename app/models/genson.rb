@@ -1,0 +1,2 @@
+class Genson < ApplicationRecord
+end

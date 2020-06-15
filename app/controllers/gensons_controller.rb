@@ -1,0 +1,2 @@
+class GensonsController < ApplicationController
+end
