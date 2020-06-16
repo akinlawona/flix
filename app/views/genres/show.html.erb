@@ -1,6 +1,6 @@
 <h1><%= @genre.name %></h1>
 <% @genre.movies.each do |movie| %>
-<%= link_to image_tag(movie.image_file_name), movie %>
+<%= link_to main_image(movie), movie %>
 <% end %>
 
 <% if current_user_admin? %>
