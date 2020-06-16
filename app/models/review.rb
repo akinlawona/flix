@@ -9,6 +9,11 @@ validates :stars, inclusion: {
   in: STARS,
   message: "must be between 1 and 5"
 }
+
+
+scope :past_n_days,->(max) {where("created_at >= ?", max.days.ago)} 
+
+
   def stars_as_percent
     (stars / 5.0) * 100.0
   end

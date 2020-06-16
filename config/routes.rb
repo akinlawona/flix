@@ -14,7 +14,7 @@ Rails.application.routes.draw do
   resource :session, only: [:new,:create, :destroy ]
 
   resources :users
-
+ get "movies/filter/:filter" => "movies#index", as: :filtered_movies
   get "signup" => "users#new"
   get "signin" => "sessions#new"
 
