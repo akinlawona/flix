@@ -51,7 +51,8 @@ class MoviesController < ApplicationController
 
     def destroy 
         @movie.destroy
-        redirect_to movies_path
+        title = @movie.title
+        redirect_to movies_path, alert: "#{title} was successfully deleted"
     end
 
     
